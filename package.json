@@ -1,0 +1,30 @@
+{
+  "name": "webassembly-webgl-shaders",
+  "version": "1.0.0",
+  "description": "Demo project for using WebGL shaders in WebAssembly",
+  "scripts": {
+    "build": "rm -rf build && mkdir build && cd build && cmake -G\"MSYS Makefiles\" .. && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanRuta/webassembly-webgl-shaders.git"
+  },
+  "keywords": [],
+  "author": "Dan Ruta",
+  "license": "MIT",
+  "directories": {},
+  "bugs": {
+    "url": "https://github.com/DanRuta/webassembly-webgl-shaders/issues"
+  },
+  "engines": {
+    "node": ">= 8.4.0"
+  },
+  "homepage": "https://github.com/DanRuta/webassembly-webgl-shaders#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-uglify": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-exec": "^3.0.0"
+  }
+}
