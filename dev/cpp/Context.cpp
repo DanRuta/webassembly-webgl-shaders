@@ -115,7 +115,10 @@ Context::Context (int w, int h, char * id) {
     attrs.majorVersion = 2;
     attrs.minorVersion = 0;
 
-    context = emscripten_webgl_create_context(id, &attrs);
+    std::string id_str = id;
+    std::string sharp_id_str = "#" + id_str;
+
+    context = emscripten_webgl_create_context(sharp_id_str.c_str(), &attrs);
     emscripten_webgl_make_context_current(context);
 
     // Compile shaders
